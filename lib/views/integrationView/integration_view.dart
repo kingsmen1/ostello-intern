@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ostello/views/YouTubeActivationPage/youTube_activation_page.dart';
+// import 'package:ostello/views/YouTubeActivationPage/youTube_activation_page.dart';
 import 'package:ostello/views/integrationView/components/integration_card.dart';
 import 'package:ostello/views/youtubeIntegrateView/youtube_integrate_view.dart';
 
@@ -10,7 +12,7 @@ class IntegrationView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Integration' ),
+        title: const Text('Integration'), centerTitle: true,
         // leading: IconButton(
         //   icon: const Icon(Icons.arrow_back),
         //   onPressed: () {
@@ -30,9 +32,11 @@ class IntegrationView extends StatelessWidget {
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (_) => const YouTubeIntegrationPage(
-                      isActive: false,
-                    ),
+                    // builder: (_) => const YouTubeIntegrationPage(
+                    //   isActive: false,
+                    // ),
+                    //todo: Un comment to view the YouTubeIntegrationActivationPage
+                    builder: (_) => const YouTubeIntegrationActivationPage(),
                   )),
               icon: "assets/icons/youtube_icon.png",
               iconColor: Colors.purple,

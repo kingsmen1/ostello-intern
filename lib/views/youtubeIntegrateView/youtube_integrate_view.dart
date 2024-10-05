@@ -11,6 +11,7 @@ class YouTubeIntegrationPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('YouTube Integration'),
+        centerTitle: true,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
